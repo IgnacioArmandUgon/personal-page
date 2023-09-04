@@ -1,24 +1,34 @@
-import Link from "next/link"
-import React from "react"
+import React from 'react';
+import Title from './Title';
 
 const Navbar = () => {
   return (
-    <div className='absolute p-6 flex w-full m-0 top-0 bg-gradient-to-r from-teal-50'>
-      <Link href={"/home"} title='HOME' className='tracking-widest mr-3'>
-        HOME
-      </Link>
-
-      <Link href={"/home"} title='HOME' className='tracking-widest mr-3 hover:under'>
-        Sobre mi
-      </Link>
-      <Link href={"/home"} title='HOME' className='tracking-widest mr-3'>
-        Contactos
-      </Link>
-      <Link href={"/home"} title='HOME' className='tracking-widest mr-3'>
-        Proyectos
-      </Link>
+    <div className='p-6 flex w-full m-0 top-0 gap-5 justify-between bg-gradient-to-r from-teal-950 '>
+      <a href={'#home'} className='tracking-wide mr-3 '>
+        {/* <Title /> */}
+        Ignacio Armand-ugón
+      </a>
+      <nav className='flex'>
+        <ul className='flex gap-4'>
+          <li>
+            <a href={'#aboutMe'} className='tracking-wide '>
+              Sobre mi
+            </a>
+          </li>
+          <li>
+            <a href={'#contact'} className='tracking-wide '>
+              Contactos
+            </a>
+          </li>
+          <li>
+            <a href={'#projects'} className='tracking-wide '>
+              Proyectos
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
