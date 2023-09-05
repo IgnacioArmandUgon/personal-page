@@ -1,15 +1,19 @@
-import Navbar from '@/components/Navbar';
-import Section from '@/components/Section';
-import Title from '@/components/Title';
-import Image from 'next/image';
-import { Metadata } from 'next/types';
-import profil from '../img/perfil.jpg';
-import arrowUp from '../img/arrowUp.svg';
+import Navbar from "@/components/Navbar"
+import Section from "@/components/Section"
+import Title from "@/components/Title"
+import Image from "next/image"
+
+import {Metadata} from "next/types"
+import profil from "../img/perfil.jpg"
+import foto from "../img/foto.jpg"
+import arrowUp from "../img/arrowUp.svg"
+import MediaIcons from "@/components/MediaIcons"
+import Subtitle from "@/components/Subtitle"
 
 export const metadata: Metadata = {
-  title: 'Personal Page',
-  description: 'Pagina personal de Ignacio Armand-ugón',
-};
+  title: "Personal Page",
+  description: "Pagina personal de Ignacio Armand-ugón",
+}
 export default function Home() {
   return (
     <main
@@ -29,7 +33,55 @@ export default function Home() {
         </a>
       </button>
       <Navbar />
+
+      <section className='flex  items-center mt-5 '>
+        <div className='flex flex-col gap-4'>
+          <Title />
+          <p className='text-md'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore molestias nam nihil, dolorum
+            voluptas exercitationem aperiam ratione sequi, eos eaque ea dicta. Id laudantium facilis
+            repudiandae molestias cum quisquam explicabo!
+          </p>
+          <MediaIcons />
+        </div>
+        <Image
+          src={foto}
+          alt='Una foto de mí que no pudo cargar'
+          className='sm:w-full md:w-2/4 rounded contrast-[1.17] drop-shadow-[1px_1px_10px_#0d9488] hover:drop-shadow-[1px_1px_15px_#0f766e] hover:contrast-100 transition-all -z-0'
+        />
+      </section>
       <Section id='aboutMe'>
+        <Subtitle text='Sobre mi' />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fugit blanditiis laboriosam
+          consequatur aliquam, beatae libero voluptas odio ut corporis aspernatur ex incidunt, qui est
+          consectetur, officia dolore numquam rerum hic. Quasi quae, labore aliquam, quod enim quibusdam
+          impedit minus eaque reprehenderit ea sit. Accusamus quod suscipit iste quisquam! Quia ex illum
+          similique ducimus libero maiores necessitatibus et unde. Facilis officia odio expedita itaque
+          praesentium nihil illum reprehenderit sequi, autem ex, deserunt dolore voluptatem odit dignissimos
+          ut minus inventore harum vero nemo corporis nostrum? Ipsum, in accusantium ipsam excepturi quod
+          numquam. Di
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fugit blanditiis laboriosam
+          consequatur aliquam, beatae libero voluptas odio ut corporis aspernatur ex incidunt, qui est
+          consectetur, officia dolore numquam rerum hic. Quasi quae, labore aliquam, quod enim quibusdam
+          impedit minus eaque reprehenderit ea sit. Accusamus quod suscipit iste quisquam! Quia ex illum
+          similique ducimus libero maiores necessitatibus et unde. Facilis officia odio expedita itaque
+          praesentium nihil illum reprehenderit sequi, autem ex, deserunt dolore voluptatem odit dignissimos
+          ut minus inventore harum vero nemo corporis nostrum? Ipsum, in accusantium ipsam excepturi quod
+          numquam. Di
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fugit blanditiis laboriosam
+          consequatur aliquam, beatae libero voluptas odio ut corporis aspernatur ex incidunt, qui est
+          consectetur, officia dolore numquam rerum hic. Quasi quae, labore aliquam, quod enim quibusdam
+          impedit minus eaque reprehenderit ea sit. Accusamus quod suscipit iste quisquam! Quia ex illum
+          similique ducimus libero maiores necessitatibus et unde. Facilis officia odio expedita itaque
+          praesentium nihil illum reprehenderit sequi, autem ex, deserunt dolore voluptatem odit dignissimos
+          ut minus inventore harum vero nemo corporis nostrum? Ipsum, in accusantium ipsam excepturi quod
+          numquam. Di
+        </p>
         {/* <Title /> */}
         {/* <Image
           src={profil}
@@ -52,5 +104,5 @@ export default function Home() {
       <Section id='contact'></Section>
       <Section id='projects'></Section>
     </main>
-  );
+  )
 }
