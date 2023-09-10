@@ -1,19 +1,19 @@
-import Navbar from "@/components/Navbar"
-import Section from "@/components/Section"
-import Title from "@/components/Title"
-import Image from "next/image"
+import Navbar from '@/components/Navbar';
+import Section from '@/components/Section';
+import Title from '@/components/Title';
+import Image from 'next/image';
 
-import {Metadata} from "next/types"
-import profil from "../img/perfil.jpg"
-import foto from "../img/foto.jpg"
-import arrowUp from "../img/arrowUp.svg"
-import MediaIcons from "@/components/MediaIcons"
-import Subtitle from "@/components/Subtitle"
+import { Metadata } from 'next/types';
+import profil from '../img/perfil.jpg';
+import foto from '../img/foto.jpg';
+import arrowUp from '../img/arrowUp.svg';
+import MediaIcons from '@/components/MediaIcons';
+import Subtitle from '@/components/Subtitle';
 
 export const metadata: Metadata = {
-  title: "Personal Page",
-  description: "Pagina personal de Ignacio Armand-ugón",
-}
+  title: 'Personal Page',
+  description: 'Pagina personal de Ignacio Armand-ugón',
+};
 export default function Home() {
   return (
     <main
@@ -38,9 +38,9 @@ export default function Home() {
         <div className='flex flex-col gap-4'>
           <Title />
           <p className='text-md'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore molestias nam nihil, dolorum
-            voluptas exercitationem aperiam ratione sequi, eos eaque ea dicta. Id laudantium facilis
-            repudiandae molestias cum quisquam explicabo!
+            Soy un desarrollador web con gran gusto por construir soluciones efectivas. Me
+            gusta siempre estar siempre aprendiendo y descubriendo nuevas formas de
+            enfrentar desafíos.
           </p>
           <MediaIcons />
         </div>
@@ -53,34 +53,26 @@ export default function Home() {
       <Section id='aboutMe'>
         <Subtitle text='Sobre mi' />
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fugit blanditiis laboriosam
-          consequatur aliquam, beatae libero voluptas odio ut corporis aspernatur ex incidunt, qui est
-          consectetur, officia dolore numquam rerum hic. Quasi quae, labore aliquam, quod enim quibusdam
-          impedit minus eaque reprehenderit ea sit. Accusamus quod suscipit iste quisquam! Quia ex illum
-          similique ducimus libero maiores necessitatibus et unde. Facilis officia odio expedita itaque
-          praesentium nihil illum reprehenderit sequi, autem ex, deserunt dolore voluptatem odit dignissimos
-          ut minus inventore harum vero nemo corporis nostrum? Ipsum, in accusantium ipsam excepturi quod
-          numquam. Di
+          Nací en Montevideo, Uruguay. Empecé a estudiar programación de forma autodidacta
+          por curiosidad, y apoyandome en amigos que ya trabajaban en el rubro. Al ver que
+          me gustaba, empezé a estudiar informatica en la UTU ITS Arias Valparda, con
+          enfasis en Desarrollo web. En esos años, y para la prueba final de ese curso,
+          tuve la oportunidad de trabajaron con un grupo de compañeros en el proyecto de
+          crear una pagina web, una ecommerce para una tienda de insumos para la seguridad
+          laboral.
         </p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fugit blanditiis laboriosam
-          consequatur aliquam, beatae libero voluptas odio ut corporis aspernatur ex incidunt, qui est
-          consectetur, officia dolore numquam rerum hic. Quasi quae, labore aliquam, quod enim quibusdam
-          impedit minus eaque reprehenderit ea sit. Accusamus quod suscipit iste quisquam! Quia ex illum
-          similique ducimus libero maiores necessitatibus et unde. Facilis officia odio expedita itaque
-          praesentium nihil illum reprehenderit sequi, autem ex, deserunt dolore voluptatem odit dignissimos
-          ut minus inventore harum vero nemo corporis nostrum? Ipsum, in accusantium ipsam excepturi quod
-          numquam. Di
+          A comienzos del 2022 me inscribí en un training de Desarrollo Web Fullstack de 3
+          meses que ofrecía la empresa Sofka Techonogies. En este training, aparte de
+          conocer gente genial, aprendí y puse en practicas tecnologías como JavaSpript,
+          React.js, Redux, Java, Spring boot, GIT, Firebase. Y habilidades blandas como la
+          comunicación efectiva y el trabajo en equipo.
         </p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fugit blanditiis laboriosam
-          consequatur aliquam, beatae libero voluptas odio ut corporis aspernatur ex incidunt, qui est
-          consectetur, officia dolore numquam rerum hic. Quasi quae, labore aliquam, quod enim quibusdam
-          impedit minus eaque reprehenderit ea sit. Accusamus quod suscipit iste quisquam! Quia ex illum
-          similique ducimus libero maiores necessitatibus et unde. Facilis officia odio expedita itaque
-          praesentium nihil illum reprehenderit sequi, autem ex, deserunt dolore voluptatem odit dignissimos
-          ut minus inventore harum vero nemo corporis nostrum? Ipsum, in accusantium ipsam excepturi quod
-          numquam. Di
+          Tras el trining, pasé a trabajar como desarrollador web **Front-end** con
+          tecnologías como React, React Router, React testing library, Jest y Docker. Y
+          familizarisarme con herramientas como Github y Postman API. Todo esto trabajando
+          bajo la metodología Scrum.
         </p>
         {/* <Title /> */}
         {/* <Image
@@ -104,5 +96,5 @@ export default function Home() {
       <Section id='contact'></Section>
       <Section id='projects'></Section>
     </main>
-  )
+  );
 }
