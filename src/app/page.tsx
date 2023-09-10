@@ -9,6 +9,7 @@ import foto from '../img/foto.jpg';
 import arrowUp from '../img/arrowUp.svg';
 import MediaIcons from '@/components/MediaIcons';
 import Subtitle from '@/components/Subtitle';
+import Experience from '@/components/Experience';
 
 export const metadata: Metadata = {
   title: 'Personal Page',
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main
-      className='flex min-h-screen flex-col items-center justify-between mx-auto px-12  overflow-x-hidden max-w-[1500px]'
+      className='flex min-h-screen flex-col items-center justify-between mx-auto px-12  overflow-x-hidden max-w-[1400px]'
       id='home'
     >
       {/* <Navbar /> */}
@@ -52,7 +53,7 @@ export default function Home() {
       </section>
       <Section id='aboutMe'>
         <Subtitle text='Sobre mi' />
-        <p>
+        <p className='text-lg'>
           Nací en Montevideo, Uruguay. Empecé a estudiar programación de forma autodidacta
           por curiosidad, y apoyandome en amigos que ya trabajaban en el rubro. Al ver que
           me gustaba, empezé a estudiar informatica en la UTU ITS Arias Valparda, con
@@ -61,38 +62,28 @@ export default function Home() {
           crear una pagina web, una ecommerce para una tienda de insumos para la seguridad
           laboral.
         </p>
-        <p>
+        <p className='text-lg'>
           A comienzos del 2022 me inscribí en un training de Desarrollo Web Fullstack de 3
           meses que ofrecía la empresa Sofka Techonogies. En este training, aparte de
           conocer gente genial, aprendí y puse en practicas tecnologías como JavaSpript,
           React.js, Redux, Java, Spring boot, GIT, Firebase. Y habilidades blandas como la
           comunicación efectiva y el trabajo en equipo.
         </p>
-        <p>
+        <p className='text-lg'>
           Tras el trining, pasé a trabajar como desarrollador web **Front-end** con
           tecnologías como React, React Router, React testing library, Jest y Docker. Y
           familizarisarme con herramientas como Github y Postman API. Todo esto trabajando
           bajo la metodología Scrum.
         </p>
-        {/* <Title /> */}
-        {/* <Image
-          src={profil}
-          width={500}
-          height={500}
-          alt='Picture of the author'
-          className='rounded-md blur-sm hover:blur-0 transition-all duration-300'
-        /> */}
-        {/* <div
-          style={{
-            width: '50px',
-            height: '50px',
-            borderRadius: '150px',
-            background: '#212121',
-            boxShadow: '11px 11px 40px #003434, -11px -11px 40px #009a9a',
-          }}
-        /> */}
       </Section>
-
+      <Section id='experience'>
+        <Subtitle text='Experiencias' />
+        <Experience
+          description='Está fue una experiencia muy buena'
+          title='Compensar'
+          technologies={['React', 'HTML', 'CSS']}
+        />
+      </Section>
       <Section id='contact'></Section>
       <Section id='projects'></Section>
     </main>

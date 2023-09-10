@@ -14,3 +14,7 @@ A comienzos del 2022 me inscribí en un training de Desarrollo Web Fullstack de 
 ## Paso por Compensar
 
 Tras el trining, pasé a trabajar como desarrollador web **Front-end** con tecnologías como React, React Router, React testing library, Jest y Docker. Y familizarisarme con herramientas como Github y Postman API. Todo esto trabajando bajo la metodología Scrum.
+
+### IDEAS
+
+Botones de navegación se mueven al costado al scrollear para abajo.
