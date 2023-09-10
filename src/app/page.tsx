@@ -21,12 +21,11 @@ export default function Home() {
       className='flex min-h-screen flex-col items-center justify-between mx-auto px-12  overflow-x-hidden max-w-[1400px]'
       id='home'
     >
-      {/* <Navbar /> */}
-      <div className='absolute w-[90vw] rounded-full blur-3xl rotate-12 h-36 -z-10 bg-gradient-to-r from-teal-500' />
-      <div className='absolute w-[90vw] rounded-full blur-3xl rotate-45 h-36 -z-10 bg-gradient-to-r from-teal-400' />
+      <div className='absolute w-[90vw] animate-pulse rounded-full blur-3xl rotate-12 h-36 -z-10 bg-gradient-to-r from-teal-500' />
+      <div className='absolute w-[90vw] animate-pulse rounded-full blur-3xl rotate-45 h-36 -z-10 bg-gradient-to-r from-teal-400' />
 
-      <div className='absolute w-[90vw] rounded-full blur-3xl rotate-3 h-36 top-[90vh] -z-10 bg-gradient-to-r from-teal-600' />
-      <div className='absolute w-[90vw] rounded-full blur-3xl  -rotate-3 h-36 top-[170vh] -z-10 bg-gradient-to-l from-teal-600' />
+      <div className='absolute w-[90vw] animate-pulse rounded-full blur-3xl rotate-3 h-36 top-[90vh] -z-10 bg-gradient-to-r from-teal-600 ' />
+      <div className='absolute w-[90vw] animate-pulse rounded-full blur-3xl  -rotate-3 h-36 top-[170vh] -z-10 bg-gradient-to-l from-teal-600 ' />
       {/* <div className='absolute w-full blur-3xl h-36  -z-10 bg-gradient-to-l from-red-600 opacity-40' /> */}
       <button>
         <a href='#home' className='fixed bottom-4 right-8'>
@@ -35,7 +34,7 @@ export default function Home() {
       </button>
       <Navbar />
 
-      <section className='flex  items-center mt-5 '>
+      <section className='flex gap-7 items-center mt-5'>
         <div className='flex flex-col gap-4'>
           <Title />
           <p className='text-md'>
@@ -48,7 +47,7 @@ export default function Home() {
         <Image
           src={foto}
           alt='Una foto de mí que no pudo cargar'
-          className='sm:w-full md:w-2/4 rounded contrast-[1.17] drop-shadow-[1px_1px_10px_#0d9488] hover:drop-shadow-[1px_1px_15px_#0f766e] hover:contrast-100 transition-all -z-0'
+          className='sm:w-full md:w-2/4 rounded contrast-[1.10] drop-shadow-[1px_1px_10px_#0d9488] hover:drop-shadow-[1px_1px_10px_#0f766e] hover:contrast-100 transition-all -z-0 '
         />
       </section>
       <Section id='aboutMe'>

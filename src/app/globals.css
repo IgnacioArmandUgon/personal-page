@@ -60,3 +60,17 @@ body::-webkit-scrollbar-thumb {
     to(transparent)
   );
 }
+
+.animate-pulse {
+  animation: pulse 10s cubic-bezier(0.4, 0, 0.6, 1) infinite !important;
+
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 1 !important;
+    }
+    50% {
+      opacity: 0.6 !important;
+    }
+  }
+}

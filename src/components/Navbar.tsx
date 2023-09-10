@@ -16,13 +16,18 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href={'#contact'} className='tracking-wide '>
-              Contactos
+            <a href={'#projects'} className='tracking-wide '>
+              Proyectos
             </a>
           </li>
           <li>
-            <a href={'#projects'} className='tracking-wide '>
-              Proyectos
+            <a href={'#experience'} className='tracking-wide '>
+              Experiencia
+            </a>
+          </li>
+          <li>
+            <a href={'#contact'} className='tracking-wide '>
+              Contactos
             </a>
           </li>
         </ul>
