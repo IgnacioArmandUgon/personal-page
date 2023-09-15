@@ -18,3 +18,5 @@ Tras el trining, pasé a trabajar como desarrollador web **Front-end** con tecno
 ### IDEAS
 
 Botones de navegación se mueven al costado al scrollear para abajo.
+
+Footer con tecnologías usadas en la pagina

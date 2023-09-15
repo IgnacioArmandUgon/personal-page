@@ -1,21 +1,21 @@
-import React from "react"
-import {Roboto, Oswald, Urbanist} from "next/font/google"
+import React from 'react';
+import { Roboto, Oswald, Urbanist } from 'next/font/google';
 
 const oswald = Oswald({
-  weight: ["700"],
-  style: ["normal"],
-  subsets: ["latin"],
-})
+  weight: ['700'],
+  style: ['normal'],
+  subsets: ['latin'],
+});
 const roboto = Roboto({
-  weight: ["900"],
-  style: ["normal"],
-  subsets: ["latin"],
-})
+  weight: ['900'],
+  style: ['normal'],
+  subsets: ['latin'],
+});
 const urbanist = Urbanist({
-  weight: ["500"],
-  style: ["normal"],
-  subsets: ["latin"],
-})
+  weight: ['500'],
+  style: ['normal'],
+  subsets: ['latin'],
+});
 
 const Title = () => {
   return (
@@ -26,11 +26,16 @@ const Title = () => {
       {/* <h2 className={roboto.className + "w-full  text-center text-5xl m-4 z-10 tracking-widest"}>
         Ignacio Armand-ugón
       </h2> */}
-      <h2 className={urbanist.className + "w-full text-left text-5xl my-2 underline z-10 tracking-widest"}>
+      <h2
+        className={
+          urbanist.className +
+          'w-full text-left md:text-4xl text-5xl my-2 underline z-10 tracking-widest'
+        }
+      >
         Ignacio Armand-ugón.
       </h2>
     </>
-  )
-}
+  );
+};
 
-export default Title
+export default Title;

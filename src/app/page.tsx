@@ -18,14 +18,14 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main
-      className='flex min-h-screen flex-col items-center justify-between mx-auto px-12  overflow-x-hidden max-w-[1400px]'
+      className='flex min-h-screen flex-col items-center justify-between mx-auto md:px-12  overflow-x-hidden max-w-[1400px]'
       id='home'
     >
-      <div className='absolute w-[90vw] animate-pulse rounded-full blur-3xl rotate-12 h-36 -z-10 bg-gradient-to-r from-teal-500' />
+      <div className='absolute w-[90vw] animate-pulse rounded-full blur-3xl rotate-12 h-36 z-10 bg-gradient-to-r from-teal-500' />
       <div className='absolute w-[90vw] animate-pulse rounded-full blur-3xl rotate-45 h-36 -z-10 bg-gradient-to-r from-teal-400' />
 
       <div className='absolute w-[90vw] animate-pulse rounded-full blur-3xl rotate-3 h-36 top-[90vh] -z-10 bg-gradient-to-r from-teal-600 ' />
-      <div className='absolute w-[90vw] animate-pulse rounded-full blur-3xl  -rotate-3 h-36 top-[170vh] -z-10 bg-gradient-to-l from-teal-600 ' />
+      <div className='absolute w-[90vw] animate-pulse rounded-full blur-3xl -rotate-3 h-36 top-[170vh] -z-10 bg-gradient-to-l from-teal-600 ' />
       {/* <div className='absolute w-full blur-3xl h-36  -z-10 bg-gradient-to-l from-red-600 opacity-40' /> */}
       <button>
         <a href='#home' className='fixed bottom-4 right-8'>
@@ -34,10 +34,10 @@ export default function Home() {
       </button>
       <Navbar />
 
-      <section className='flex gap-7 items-center mt-5'>
+      <section className='flex md:flex-row flex-col gap-7 py-3 px-6 items-center mt-5'>
         <div className='flex flex-col gap-4'>
           <Title />
-          <p className='text-md'>
+          <p className='text-md '>
             Soy un desarrollador web con gran gusto por construir soluciones efectivas. Me
             gusta siempre estar siempre aprendiendo y descubriendo nuevas formas de
             enfrentar desafíos.
