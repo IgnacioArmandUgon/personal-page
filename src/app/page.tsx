@@ -1,12 +1,13 @@
 import Navbar from '@/components/Navbar';
 import Section from '@/components/Section';
 import Image from 'next/image';
-
+import pokedex from '../img/pokedex.jpg';
 import { Metadata } from 'next/types';
 import arrowUp from '../img/arrowUp.svg';
 import Subtitle from '@/components/Subtitle';
 import Experience from '@/components/Experience';
 import AboutMeSection from '@/components/AboutMeSection ';
+import ProjectCard from '@/components/ProjectCard';
 
 export const metadata: Metadata = {
   title: 'Personal Page',
@@ -64,7 +65,26 @@ export default function Home() {
           technologies={['React', 'HTML', 'CSS']}
         />
       </Section>
-      <Section id='projects'></Section>
+      <Section id='projects'>
+        <Subtitle text='Proyectos' />
+        <div className='flex gap-5 content-center flex-wrap'>
+          <ProjectCard
+            image={pokedex}
+            technologies={['React', 'CSS']}
+            url='https://pokemons-with-next.vercel.app/'
+          />
+          <ProjectCard
+            image={pokedex}
+            technologies={['React']}
+            url='https://pokemons-with-next.vercel.app/'
+          />
+          <ProjectCard
+            image={pokedex}
+            technologies={['React']}
+            url='https://pokemons-with-next.vercel.app/'
+          />
+        </div>
+      </Section>
       <Section id='contact'></Section>
     </main>
   );
