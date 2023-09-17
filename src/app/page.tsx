@@ -1,15 +1,12 @@
 import Navbar from '@/components/Navbar';
 import Section from '@/components/Section';
-import Title from '@/components/Title';
 import Image from 'next/image';
 
 import { Metadata } from 'next/types';
-import profil from '../img/perfil.jpg';
-import foto from '../img/foto.jpg';
 import arrowUp from '../img/arrowUp.svg';
-import MediaIcons from '@/components/MediaIcons';
 import Subtitle from '@/components/Subtitle';
 import Experience from '@/components/Experience';
+import AboutMeSection from '@/components/AboutMeSection ';
 
 export const metadata: Metadata = {
   title: 'Personal Page',
@@ -18,14 +15,14 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main
-      className='flex min-h-screen flex-col items-center justify-between mx-auto md:px-12  overflow-x-hidden max-w-[1400px]'
+      className='flex min-h-screen flex-col items-center justify-between mx-auto md:px-12 overflow-x-hidden max-w-[1400px]'
       id='home'
     >
-      <div className='absolute w-[90vw] animate-pulse rounded-full blur-3xl rotate-12 h-36 z-10 bg-gradient-to-r from-teal-500' />
-      <div className='absolute w-[90vw] animate-pulse rounded-full blur-3xl rotate-45 h-36 -z-10 bg-gradient-to-r from-teal-400' />
+      <div className='absolute w-[90vw] animate-pulseSlow rounded-full blur-3xl rotate-12 h-36 z-10 bg-gradient-to-r from-teal-500' />
+      <div className='absolute w-[90vw] animate-pulseSlow rounded-full blur-3xl rotate-45 h-36 -z-10 bg-gradient-to-r from-teal-400' />
 
-      <div className='absolute w-[90vw] animate-pulse rounded-full blur-3xl rotate-3 h-36 top-[90vh] -z-10 bg-gradient-to-r from-teal-600 ' />
-      <div className='absolute w-[90vw] animate-pulse rounded-full blur-3xl -rotate-3 h-36 top-[170vh] -z-10 bg-gradient-to-l from-teal-600 ' />
+      <div className='absolute w-[90vw] animate-pulseSlow rounded-full blur-3xl rotate-3 h-36 top-[90vh] -z-10 bg-gradient-to-r from-teal-600 ' />
+      <div className='absolute w-[90vw] animate-pulseSlow rounded-full blur-3xl -rotate-3 h-36 top-[170vh] -z-10 bg-gradient-to-l from-teal-600 ' />
       {/* <div className='absolute w-full blur-3xl h-36  -z-10 bg-gradient-to-l from-red-600 opacity-40' /> */}
       <button>
         <a href='#home' className='fixed bottom-4 right-8'>
@@ -33,24 +30,8 @@ export default function Home() {
         </a>
       </button>
       <Navbar />
-
-      <section className='flex md:flex-row flex-col gap-7 py-3 px-6 items-center mt-5'>
-        <div className='flex flex-col gap-4'>
-          <Title />
-          <p className='text-md '>
-            Soy un desarrollador web con gran gusto por construir soluciones efectivas. Me
-            gusta siempre estar siempre aprendiendo y descubriendo nuevas formas de
-            enfrentar desafíos.
-          </p>
-          <MediaIcons />
-        </div>
-        <Image
-          src={foto}
-          alt='Una foto de mí que no pudo cargar'
-          className='sm:w-full md:w-2/4 rounded contrast-[1.10] drop-shadow-[1px_1px_10px_#0d9488] hover:drop-shadow-[1px_1px_10px_#0f766e] hover:contrast-100 transition-all -z-0 '
-        />
-      </section>
-      <Section id='aboutMe'>
+      <AboutMeSection />
+      {/* <Section id='aboutMe'>
         <Subtitle text='Sobre mi' />
         <p className='text-lg'>
           Nací en Montevideo, Uruguay. Empecé a estudiar programación de forma autodidacta
@@ -74,7 +55,7 @@ export default function Home() {
           familizarisarme con herramientas como Github y Postman API. Todo esto trabajando
           bajo la metodología Scrum.
         </p>
-      </Section>
+      </Section> */}
       <Section id='experience'>
         <Subtitle text='Experiencias' />
         <Experience
@@ -83,8 +64,8 @@ export default function Home() {
           technologies={['React', 'HTML', 'CSS']}
         />
       </Section>
-      <Section id='contact'></Section>
       <Section id='projects'></Section>
+      <Section id='contact'></Section>
     </main>
   );
 }

@@ -3,7 +3,7 @@ import Title from './Title';
 
 const Navbar = () => {
   return (
-    <div className='p-6 flex w-full m-0 top-0 gap-5 justify-between bg-gradient-to-r from-teal-950 '>
+    <div className='p-6 flex w-full m-0 top-0 gap-5 justify-between fixed max-w-[1400px] z-20 bg-gradient-to-r from-teal-900 '>
       <a href={'#home'} className='tracking-wide mr-3 '>
         {/* <Title /> */}
         Ignacio Armand-ugón
@@ -16,13 +16,13 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href={'#projects'} className='tracking-wide '>
-              Proyectos
+            <a href={'#experience'} className='tracking-wide '>
+              Experiencia
             </a>
           </li>
           <li>
-            <a href={'#experience'} className='tracking-wide '>
-              Experiencia
+            <a href={'#projects'} className='tracking-wide '>
+              Proyectos
             </a>
           </li>
           <li>

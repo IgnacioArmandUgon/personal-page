@@ -20,3 +20,7 @@ Tras el trining, pasé a trabajar como desarrollador web **Front-end** con tecno
 Botones de navegación se mueven al costado al scrollear para abajo.
 
 Footer con tecnologías usadas en la pagina
+
+Navbar a la derecha.
+
+Quitar redireccionamiento por ID y hacer paginas aparte con view transition.

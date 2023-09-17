@@ -29,10 +29,10 @@ const Title = () => {
       <h2
         className={
           urbanist.className +
-          'w-full text-left md:text-4xl text-5xl my-2 underline z-10 tracking-widest'
+          'w-full text-left lg:text-5xl md:text-4xl sm:text-5xl text-4xl my-2 underline z-10 tracking-widest'
         }
       >
-        Ignacio Armand-ugón.
+        Ignacio Armand-ugón<span className='text-teal-600'>.</span>
       </h2>
     </>
   );
