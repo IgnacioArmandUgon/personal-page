@@ -4,6 +4,7 @@ import htmlLogo from '../img/htmlLogo.png';
 import cssLogo from '../img/cssLogo.png';
 import jestLogo from '../img/jestLogo.svg';
 import jsLogo from '../img/jsLogo.png';
+import nextLogo from '../img/NextjsLogo.png';
 type Technology = {
   name: TechnologyName;
   logo: StaticImageData;
@@ -21,7 +22,8 @@ export type TechnologyName =
   | 'SASS'
   | 'Postman API'
   | 'React'
-  | 'Docker';
+  | 'Docker'
+  | 'NextJS';
 
 export const technologiesList: Technology[] = [
   {
@@ -45,4 +47,8 @@ export const technologiesList: Technology[] = [
     name: 'JavaScript',
     logo: jsLogo,
   },
+  {
+    name: 'NextJS',
+    logo: nextLogo
+  }
 ];

@@ -20,7 +20,7 @@ const AboutMeSection = () => {
         {!isClicked && <Title />}
         <p className='text-md '>
           {isClicked
-            ? 'Nací en Montevideo, Uruguay. Empecé a estudiar programación de forma autodidacta por curiosidad, y apoyandome en amigos que ya trabajaban en el rubro. Al ver que me gustaba, empezé a estudiar informatica en la UTU ITS Arias Valparda, con enfasis en Desarrollo web. En esos años, y para la prueba final de ese curso, tuve la oportunidad de trabajaron con un grupo de compañeros en el proyecto de crear una pagina web, una ecommerce para una tienda de insumos para la seguridad laboral.'
+            ? <p>Nací en <b>Montevideo, Uruguay</b>. Empecé a estudiar programación de forma <b>autodidacta</b> por curiosidad, y apoyandome en amigos que ya trabajaban en el rubro. Al ver que me gustaba, empezé a estudiar informatica en la <b>UTU ITS Arias Valparda</b>, con enfasis en Desarrollo web. En esos años, y para la prueba final de ese curso, tuve la oportunidad de trabajaron con un grupo de compañeros en el proyecto de crear una pagina web</p>
             : 'Hago calculadoras en Java'}
         </p>
         {!isClicked && <MediaIcons />}
@@ -28,10 +28,9 @@ const AboutMeSection = () => {
       <Image
         src={foto}
         alt='Una foto de mí que no pudo cargar'
-        onClick={() => toggleState()}
-        className={`${
-          isClicked ? 'aboutMeImg' : ''
-        } sm:w-full md:w-2/4 rounded contrast-[1.18] drop-shadow-[1px_1px_10px_#0d9488] hover:drop-shadow-[1px_2px_10px_#0f766e] hover:contrast-100 transition-all -z-0 `}
+        // onClick={() => toggleState()}
+        className={`${isClicked ? 'aboutMeImg' : ''
+          } sm:w-full md:w-2/4 rounded contrast-[1.18] drop-shadow-[1px_1px_10px_#0d9488] hover:drop-shadow-[1px_2px_10px_#0f766e] hover:contrast-100 transition-all -z-0 `}
       />
     </section>
   );

@@ -60,14 +60,25 @@ export default function Home() {
       <Section id='experience'>
         <Subtitle text='Experiencias' />
         <Experience
-          description='Está fue una experiencia muy buena'
           title='Compensar'
+          description='Está fue una experiencia muy buena'
           technologies={['React', 'HTML', 'CSS']}
+          startDate='ago 2022'
+          endDate='oct 2023'
+          role='Consultor de desarrollo Frontend'
+        />
+        <Experience
+          title='Tafitech'
+          description='Está fue una experiencia muy buena'
+          technologies={['React', 'HTML', 'CSS', 'NextJS']}
+          startDate='oct 2023'
+          endDate='presente'
+          role='Consultor de desarrollo Frontend'
         />
       </Section>
       <Section id='projects'>
         <Subtitle text='Proyectos' />
-        <div className='flex gap-5 content-center flex-wrap'>
+        <div className='flex flex-wrap justify-evenly'>
           <ProjectCard
             image={pokedex}
             technologies={['React', 'CSS']}

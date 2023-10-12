@@ -13,7 +13,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ image, url, technologies }: ProjectCardProps) => {
   return (
-    <div className='flex flex-col items-center justify-center gap-3 min-w-[250px] max-w-[350px]'>
+    <div className='flex flex-col items-center justify-center gap-3  max-w-[350px]'>
       <Link href={url} target='_blank' className=''>
         <Image
           className='rounded-xl min-w-[250px] max-w-[350px]'
