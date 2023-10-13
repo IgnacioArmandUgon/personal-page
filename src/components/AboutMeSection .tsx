@@ -4,7 +4,6 @@ import Title from './Title';
 import MediaIcons from './MediaIcons';
 import Image from 'next/image';
 import foto from '../img/foto.jpg';
-import { document } from 'postcss';
 
 const AboutMeSection = () => {
   const [viewState, setViewState] = useState('initial');

@@ -1,11 +1,9 @@
 import React from 'react';
-import Title from './Title';
 
 const Navbar = () => {
   return (
-    <div className='p-6 flex w-full m-0 top-0 gap-5 justify-between fixed max-w-[1400px] z-20 bg-gradient-to-r from-teal-900 '>
+    <div className='p-6 flex w-full m-0 top-0 gap-5 justify-between fixed max-w-[1400px] z-20 bg-gradient-to-r from-teal-900 to-teal-900/[.3] '>
       <a href={'#home'} className='tracking-wide mr-3 '>
-        {/* <Title /> */}
         Ignacio Armand-ugón
       </a>
       <nav className='flex'>

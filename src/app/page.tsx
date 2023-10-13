@@ -19,12 +19,14 @@ export default function Home() {
       className='flex min-h-screen flex-col items-center justify-between mx-auto md:px-12 overflow-x-hidden max-w-[1400px]'
       id='home'
     >
-      <div className='absolute w-[90vw] animate-pulseSlow rounded-full blur-3xl rotate-12 h-36 z-10 bg-gradient-to-r from-teal-500' />
-      <div className='absolute w-[90vw] animate-pulseSlow rounded-full blur-3xl rotate-45 h-36 -z-10 bg-gradient-to-r from-teal-400' />
-
-      <div className='absolute w-[90vw] animate-pulseSlow rounded-full blur-3xl rotate-3 h-36 top-[90vh] -z-10 bg-gradient-to-r from-teal-600 ' />
-      <div className='absolute w-[90vw] animate-pulseSlow rounded-full blur-3xl -rotate-3 h-36 top-[170vh] -z-10 bg-gradient-to-l from-teal-600 ' />
-      {/* <div className='absolute w-full blur-3xl h-36  -z-10 bg-gradient-to-l from-red-600 opacity-40' /> */}
+      {/* <div className='flex absolute h-[200vh] flex-col justify-between'>
+        <div className='w-[90vw] animate-pulseSlow rounded-full blur-3xl rotate-12 h-36 z-10 bg-gradient-to-r from-teal-500/[.1] ' />
+        <div className='w-[90vw] animate-pulseSlow rounded-full blur-3xl rotate-3 h-36 top-[90vh] -z-10 bg-gradient-to-r from-teal-600/[.1] ' />
+        <div className='w-[90vw] animate-pulseSlow rounded-full blur-3xl rotate-45 h-36 -z-10 bg-gradient-to-r from-teal-400/[.1]' />
+        <div className='w-[90vw] animate-pulseSlow rounded-full blur-3xl -rotate-3 h-36 top-[170vh] -z-10 bg-gradient-to-l from-teal-600/[.1] ' />
+        <div className='w-[90vw] animate-pulseSlow rounded-full blur-3xl rotate-3 h-36 top-[90vh] -z-10 bg-gradient-to-r from-teal-600/[.1] ' />
+        <div className='w-[90vw] animate-pulseSlow rounded-full blur-3xl -rotate-3 h-36 top-[170vh] -z-10 bg-gradient-to-l from-teal-600/[.1] ' />
+      </div> */}
       <button>
         <a href='#home' className='fixed bottom-4 right-8'>
           <Image width={50} src={arrowUp} alt='' />
@@ -32,37 +34,12 @@ export default function Home() {
       </button>
       <Navbar />
       <AboutMeSection />
-      {/* <Section id='aboutMe'>
-        <Subtitle text='Sobre mi' />
-        <p className='text-lg'>
-          Nací en Montevideo, Uruguay. Empecé a estudiar programación de forma autodidacta
-          por curiosidad, y apoyandome en amigos que ya trabajaban en el rubro. Al ver que
-          me gustaba, empezé a estudiar informatica en la UTU ITS Arias Valparda, con
-          enfasis en Desarrollo web. En esos años, y para la prueba final de ese curso,
-          tuve la oportunidad de trabajaron con un grupo de compañeros en el proyecto de
-          crear una pagina web, una ecommerce para una tienda de insumos para la seguridad
-          laboral.
-        </p>
-        <p className='text-lg'>
-          A comienzos del 2022 me inscribí en un training de Desarrollo Web Fullstack de 3
-          meses que ofrecía la empresa Sofka Techonogies. En este training, aparte de
-          conocer gente genial, aprendí y puse en practicas tecnologías como JavaSpript,
-          React.js, Redux, Java, Spring boot, GIT, Firebase. Y habilidades blandas como la
-          comunicación efectiva y el trabajo en equipo.
-        </p>
-        <p className='text-lg'>
-          Tras el trining, pasé a trabajar como desarrollador web **Front-end** con
-          tecnologías como React, React Router, React testing library, Jest y Docker. Y
-          familizarisarme con herramientas como Github y Postman API. Todo esto trabajando
-          bajo la metodología Scrum.
-        </p>
-      </Section> */}
       <Section id='experience'>
         <Subtitle text='Experiencias' />
         <Experience
           title='Compensar'
           description='Está fue una experiencia muy buena'
-          technologies={['React', 'HTML', 'CSS']}
+          technologies={['React', 'Jest', 'React Testing Library', 'SASS']}
           startDate='ago 2022'
           endDate='oct 2023'
           role='Consultor de desarrollo Frontend'
@@ -70,7 +47,7 @@ export default function Home() {
         <Experience
           title='Tafitech'
           description='Está fue una experiencia muy buena'
-          technologies={['React', 'HTML', 'CSS', 'NextJS']}
+          technologies={['React', 'NextJS', 'Jest']}
           startDate='oct 2023'
           endDate='presente'
           role='Consultor de desarrollo Frontend'
@@ -78,25 +55,14 @@ export default function Home() {
       </Section>
       <Section id='projects'>
         <Subtitle text='Proyectos' />
-        <div className='flex flex-wrap justify-evenly'>
-          <ProjectCard
-            image={pokedex}
-            technologies={['React', 'CSS']}
-            url='https://pokemons-with-next.vercel.app/'
-          />
-          <ProjectCard
-            image={pokedex}
-            technologies={['React']}
-            url='https://pokemons-with-next.vercel.app/'
-          />
-          <ProjectCard
-            image={pokedex}
-            technologies={['React']}
-            url='https://pokemons-with-next.vercel.app/'
-          />
-        </div>
+        <ProjectCard
+          image={pokedex}
+          technologies={['React', 'NextJS', 'Typescript']}
+          url='https://pokemons-with-next.vercel.app/'
+          description='Tipico proyecto de consumo de api de pokemon, pero con Next 12 y NextUI'
+        />
       </Section>
-      <Section id='contact'></Section>
-    </main>
+      {/* <Section id='contact'></Section> */}
+    </main >
   );
 }
