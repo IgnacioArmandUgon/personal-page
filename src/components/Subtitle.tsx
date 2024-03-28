@@ -18,13 +18,17 @@ const urbanist = Urbanist({
 });
 interface SubtitleProps {
   text: string;
+  underline?: boolean
+  fontSize?: 1 | 2 | 3
 }
-const Subtitle = ({ text }: SubtitleProps) => {
+const Subtitle = ({ text, underline = true, fontSize = 3 }: SubtitleProps) => {
+  const sizes = ['xl', '2xl', '3xl']
+
   return (
     <h2
       className={
         urbanist.className +
-        'w-full text-left underline text-3xl mt-2 mb-4  z-10 tracking-widest'
+        `w-full text-left ${underline && 'underline'} ${'text-' + sizes[fontSize - 1]} mt-2 mb-4 z-10 tracking-widest underline-offset-4`
       }
     >
       {text}

@@ -23,7 +23,7 @@ const AboutMeSection = () => {
           >
             Descargar CV
           </a>
-          <a className='ml-6 hover:underline underline-offset-2' href='#'>
+          <a className='ml-6 hover:underline underline-offset-2' href='#aboutMe'>
             Mas sobre mi
           </a>
         </div>
